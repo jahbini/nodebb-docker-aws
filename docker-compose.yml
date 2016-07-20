@@ -1,0 +1,12 @@
+nodebb-forum:
+  image: n-bb/1
+  volumes_from:
+    - db
+  links:
+    - db
+  ports:
+    - 8080:4567
+db:
+  image: 'mongo:latest'
+  ports:
+    - '27017'

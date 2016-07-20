@@ -1,0 +1,26 @@
+{
+  "name": "nodebb-docker-aws",
+  "version": "1.0.0",
+  "description": "Dockerfile and composefile for installation of NodeBB and Mongo containers on AWS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jahbini/nodebb-docker-aws.git"
+  },
+  "keywords": [
+    "NodeBB",
+    "docker",
+    "AWS",
+    "EC2",
+    "Mongo"
+  ],
+  "author": "James A. Hinds",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jahbini/nodebb-docker-aws/issues"
+  },
+  "homepage": "https://github.com/jahbini/nodebb-docker-aws#readme"
+}
