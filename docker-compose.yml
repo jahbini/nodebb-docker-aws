@@ -1,4 +1,6 @@
 nodebb-forum:
+# the image name should be updated to whatever name you use to tag your image
+#  when built with the command: docker build -t n-bb/1 .
   image: n-bb/1
   volumes_from:
     - db
