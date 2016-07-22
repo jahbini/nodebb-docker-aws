@@ -9,6 +9,9 @@ RUN pwd
 # as of 7/20/2016 git clone rejected the 'git protocol' clone; https worked so here it is:
 RUN git clone https://github.com/NodeBB/NodeBB.git /nodebb-forum
 RUN npm install
+RUN npm install --save nodebb-plugin-emailer-local
+RUN npm install --save nodebb-plugin-paypal-subscriptions
+RUN npm install --save  nodebb-plugin-sso-linkedin-oauth2
 
 # add the database an hostname url here
 COPY ./config.json .
