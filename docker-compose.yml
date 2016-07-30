@@ -1,14 +1,12 @@
-nodebb-forum:
-# the image name should be updated to whatever name you use to tag your image
-#  when built with the command: docker build -t n-bb/1 .
-  image: n-bb/1
-  volumes_from:
-    - db
+forum:
+  environment:
+    - 'mongo:host=db'
+    - port=80
+  image: 'bamboojim/private-snow:latest'
   links:
     - db
   ports:
-    - 8080:4567
-db:
-  image: 'mongo:latest'
-  ports:
-    - '27017'
+    - '80:80'
+  volumes_from:
+    - db
+

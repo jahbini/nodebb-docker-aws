@@ -12,6 +12,7 @@ RUN npm install
 RUN npm install --save nodebb-plugin-emailer-local
 RUN npm install --save nodebb-plugin-paypal-subscriptions
 RUN npm install --save  nodebb-plugin-sso-linkedin-oauth2
+RUN apt-get -y install sendmail 
 
 # add the database an hostname url here
 COPY ./config.json .
